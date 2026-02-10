@@ -163,6 +163,22 @@ export {
   type KumoGridVariant,
   type KumoGridGap,
 } from "./components/grid";
+export {
+  CloudflareLogo,
+  KUMO_CLOUDFLARE_LOGO_VARIANTS,
+  KUMO_CLOUDFLARE_LOGO_DEFAULT_VARIANTS,
+  type CloudflareLogoProps,
+  type CloudflareLogoVariant,
+  type CloudflareLogoColor,
+  // PoweredByCloudflare component
+  PoweredByCloudflare,
+  type PoweredByCloudflareProps,
+  // SVG generation helper
+  generateCloudflareLogoSvg,
+  type GenerateCloudflareLogoSvgOptions,
+  type CloudflareLogoSvgVariant,
+  type CloudflareLogoSvgColor,
+} from "./components/cloudflare-logo";
 // PLOP_INJECT_EXPORT
 
 // Utils
