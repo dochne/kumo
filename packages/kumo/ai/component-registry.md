@@ -3090,6 +3090,8 @@ Page navigation controls with page count display.
   Number of items displayed per page.
 - `totalCount`: number
   Total number of items across all pages.
+- `text`: object
+  Method to provide custom pagination text
 
 **Colors (kumo tokens used):**
 
@@ -3111,6 +3113,16 @@ Page navigation controls with page count display.
       perPage={10}
       totalCount={100}
       controls="simple"
+    />
+```
+
+```tsx
+<Pagination
+      text={({ perPage }) => `Page ${page} - showing ${perPage} per page`}
+      page={page}
+      setPage={setPage}
+      perPage={25}
+      totalCount={100}
     />
 ```
 

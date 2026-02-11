@@ -3446,6 +3446,11 @@
           "type": "number",
           "optional": true,
           "description": "Total number of items across all pages."
+        },
+        "text": {
+          "type": "object",
+          "optional": true,
+          "description": "Method to provide custom pagination text"
         }
       },
       "examples": [
@@ -3453,7 +3458,8 @@
         "<Pagination\n      page={page}\n      setPage={setPage}\n      perPage={10}\n      totalCount={100}\n      controls=\"simple\"\n    />",
         "<Pagination\n      page={page}\n      setPage={setPage}\n      perPage={10}\n      totalCount={100}\n      controls=\"full\"\n    />",
         "<Pagination page={page} setPage={setPage} perPage={10} totalCount={100} />",
-        "<Pagination page={page} setPage={setPage} perPage={25} totalCount={1250} />"
+        "<Pagination page={page} setPage={setPage} perPage={25} totalCount={1250} />",
+        "<Pagination\n      text={({ perPage }) => `Page ${page} - showing ${perPage} per page`}\n      page={page}\n      setPage={setPage}\n      perPage={25}\n      totalCount={100}\n    />"
       ],
       "colors": [
         "text-kumo-strong"
